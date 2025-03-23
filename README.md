@@ -61,7 +61,7 @@ These components can be used individually or in combination, allowing for a flex
 
 The strategy is controlled through a PyQt5-based graphical user interface, implemented in the `PyqtMain.py` script. The interface provides a user-friendly way to configure and execute the strategy. Key components include:
 
-1. **Market Type Selector:** Choose between spot and futures markets.
+1. **Market Type Selector:** Choose between spot and futures markets, and your preferred exchange type. The first portion, for example, `KUCOIN-S` represents `KUCOIN` as your chosen broker, with `-S` indicating the `SPOT` and `-F` indicating the `Futures`&#x20;
 2. **Trade Profile Selector:** Allows users to select between buying, selling, or both.
 3. **Capital Allocation Input:** Specifies the percentage of total capital to be used for trading.
 4. **Grid Quantity Selector:** Choose between different grid quantity profiles (e.g., vanilla).
@@ -261,7 +261,7 @@ The strategy includes robust error handling mechanisms to detect and respond to 
 
 ### Usage Example
 
-{% file src=".gitbook/assets/MevEnginedoc.mp4" %}
+{% file src=".gitbook/assets/MevEngine.mp4" %}
 
 ### Conclusion
 
