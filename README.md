@@ -189,13 +189,13 @@ The `Grid` class includes methods for calculating grid levels, placing orders, a
 
 The Dollar-Cost Averaging (DCA) strategy involves investing a fixed amount at regular intervals, regardless of the asset's price. This method reduces the impact of volatility and prevents emotional decision-making. Over time, it averages the purchase cost, potentially lowering the average price paid for an asset.
 
-Appart from this The Dca strategy only initializes if there is an RSI divergernce that has occured recently along with EMA crossover in order to get better entry.
+> Apart from this, the DCA strategy is paired with a macro EMA-based trend identification system to determine whether the market is in a bullish or bearish phase, enabling better directional entries
 
 #### Implementation
 
 The DCA strategy is implemented In a similar fashion as the Grid Class with appropriate changes. The interface allows users to configure key parameters, while the backend handles the execution of periodic investments.
 
-NOTE: DCA is long only or short only, selecting both would mean the algorithm would take whichever signal is recieved.
+> NOTE: When both is selected for DCA, the algorithm dynamically switches between long-only and short-only positions based on a macro trend identification system. If only long or short is selected, the strategy halts trading during bearish or bullish trends respectively using the same system.
 
 #### Configuration Options
 
